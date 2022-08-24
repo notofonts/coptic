@@ -2,32 +2,10 @@
 
 Fontbakery version: 0.8.9
 
-<details><summary><b>[7] NotoSansCoptic-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+<details><summary><b>[5] NotoSansCoptic-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- uni030A
-
-	- uni030B
-
-	- uni0312
-
-	- uni0327
-
-	- uni0328
-
-	- tildecomb
-
-	- uni0326
-
-	- uni0306 
-
-	- And uni030C [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -56,13 +34,6 @@ The following glyphs do not have the recommended number of contours:
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), dotbelowcomb (U+0323), gravecomb (U+0300), nicombcoptic (U+2CEF), spiritusaspercomb (U+2CF0), spiritusleniscomb (U+2CF1), u102E0 (U+102E0), uni0302 (U+0302), uni0304 (U+0304), uni0305 (U+0305) and 10 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
 
@@ -96,7 +67,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 1 | 5 | 114 | 7 | 107 | 0 |
+| 1 | 0 | 4 | 114 | 7 | 109 | 0 |
 | 0% | 0% | 2% | 49% | 3% | 46% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
