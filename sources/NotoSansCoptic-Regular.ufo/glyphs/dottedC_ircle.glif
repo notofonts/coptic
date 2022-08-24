@@ -9,6 +9,10 @@ uni25CC
   <anchor x="366" y="810" name="above.cap"/>
   <anchor x="366" y="0" name="bottom"/>
   <anchor x="366" y="810" name="top"/>
+  <anchor x="0" y="603" name="lsb"/>
+  <anchor x="0" y="810" name="lsb.cap"/>
+  <anchor x="878" y="603" name="rsb"/>
+  <anchor x="878" y="810" name="rsb.cap"/>
   <outline>
     <contour>
       <point x="616" y="570" type="curve" smooth="yes"/>
