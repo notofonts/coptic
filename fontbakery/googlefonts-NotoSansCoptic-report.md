@@ -11,23 +11,23 @@ Fontbakery version: 0.8.9
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
-	- uni030C
-
-	- uni0312
-
-	- tildecomb
-
-	- uni0328
-
-	- uni0327
-
-	- uni0326
+	- uni030A
 
 	- uni030B
 
+	- uni0312
+
+	- uni0327
+
+	- uni0328
+
+	- tildecomb
+
+	- uni0326
+
 	- uni0306 
 
-	- And uni030A [code: unattached-dotted-circle-marks]
+	- And uni030C [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -37,9 +37,9 @@ Fontbakery version: 0.8.9
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0605.semiwide 
+	- uni0605.wide 
 
-	- And uni0605.wide
+	- And uni0605.semiwide
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
