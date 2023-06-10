@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansCoptic-Regular.ttf);
+    font-family: "old font";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansCoptic-Regular.ttf);
+    font-family: "new font";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-wght-400{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	    .new-wght-400{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"head": {"checkSumAdjustment": [2058813644, 1583466144], "modified": [3744196461, 3769268769]}, "GSUB": {"table": {"LookupList": {"Lookup": {"10": {"SubTable": {"0": {"InputGlyphCount": [null, 1], "BacktrackGlyphCount": [null, 0], "SubstLookupRecord": {"0": {"SequenceIndex": [null, 0], "LookupListIndex": [null, 11]}}, "ChainSubRuleSet": {"0": {"ChainSubRuleCount": [2, null], "ChainSubRule": {"0": {"BacktrackGlyphCount": [0, null], "InputGlyphCount": [1, null], "LookAheadGlyphCount": [1, null], "LookAhead": {"0": ["u102E5", null]}, "SubstCount": [1, null], "SubstLookupRecord": {"0": {"SequenceIndex": [0, null], "LookupListIndex": [11, null]}}}, "1": {"BacktrackGlyphCount": [1, null], "Backtrack": {"0": ["u102E5", null]}, "InputGlyphCount": [1, null], "LookAheadGlyphCount": [0, null], "SubstCount": [1, null], "SubstLookupRecord": {"0": {"SequenceIndex": [0, null], "LookupListIndex": [12, null]}}}}}}, "Format": [1, 3], "SubstCount": [null, 1], "InputCoverage": {"0": {"glyphs": {"0": [null, "uni0605"]}}}, "ChainSubRuleSetCount": [1, null], "LookAheadCoverage": {"0": {"glyphs": {"0": [null, "u102E5"]}}}, "LookAheadGlyphCount": [null, 1], "Coverage": {"glyphs": {"0": ["uni0605", null]}}}, "1": {"Format": [null, 3], "BacktrackGlyphCount": [null, 1], "BacktrackCoverage": {"0": {"glyphs": {"0": [null, "u102E5"]}}}, "InputGlyphCount": [null, 1], "InputCoverage": {"0": {"glyphs": {"0": [null, "uni0605"]}}}, "LookAheadGlyphCount": [null, 0], "SubstCount": [null, 1], "SubstLookupRecord": {"0": {"SequenceIndex": [null, 0], "LookupListIndex": [null, 11]}}}, "2": {"Format": [null, 3], "BacktrackGlyphCount": [null, 0], "InputGlyphCount": [null, 1], "InputCoverage": {"0": {"glyphs": {"0": [null, "uni0605"]}}}, "LookAheadGlyphCount": [null, 4], "LookAheadCoverage": {"0": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}, "1": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}, "2": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}, "3": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}}, "SubstCount": [null, 1], "SubstLookupRecord": {"0": {"SequenceIndex": [null, 0], "LookupListIndex": [null, 11]}}}, "3": {"Format": [null, 3], "BacktrackGlyphCount": [null, 0], "InputGlyphCount": [null, 1], "InputCoverage": {"0": {"glyphs": {"0": [null, "uni0605"]}}}, "LookAheadGlyphCount": [null, 3], "LookAheadCoverage": {"0": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}, "1": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}, "2": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}}, "SubstCount": [null, 1], "SubstLookupRecord": {"0": {"SequenceIndex": [null, 0], "LookupListIndex": [null, 12]}}}, "4": {"Format": [null, 3], "BacktrackGlyphCount": [null, 0], "InputGlyphCount": [null, 1], "InputCoverage": {"0": {"glyphs": {"0": [null, "uni0605"]}}}, "LookAheadGlyphCount": [null, 2], "LookAheadCoverage": {"0": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}, "1": {"glyphs": {"0": [null, "u102E1"], "1": [null, "u102E2"], "2": [null, "u102E3"], "3": [null, "u102E4"], "4": [null, "u102E5"], "5": [null, "u102E6"], "6": [null, "u102E7"], "7": [null, "u102E8"], "8": [null, "u102E9"], "9": [null, "u102EA"], "10": [null, "u102EB"], "11": [null, "u102EC"], "12": [null, "u102ED"], "13": [null, "u102EE"], "14": [null, "u102EF"], "15": [null, "u102F0"], "16": [null, "u102F1"], "17": [null, "u102F2"], "18": [null, "u102F3"], "19": [null, "u102F4"], "20": [null, "u102F5"], "21": [null, "u102F6"], "22": [null, "u102F7"], "23": [null, "u102F8"], "24": [null, "u102F9"], "25": [null, "u102FA"], "26": [null, "u102FB"]}}}, "SubstCount": [null, 1], "SubstLookupRecord": {"0": {"SequenceIndex": [null, 0], "LookupListIndex": [null, 13]}}}}, "LookupFlag": [0, 8], "SubTableCount": [1, 5]}, "11": {"LookupFlag": [0, 8]}, "12": {"SubTable": {"0": {"mapping": {"uni0605": ["uni0605.extrawide", "uni0605.wide"]}}}, "LookupFlag": [0, 8]}, "13": {"LookupType": [null, 1], "LookupFlag": [null, 8], "SubTableCount": [null, 1], "SubTable": {"0": {"mapping": {"uni0605": [null, "uni0605.semiwide"]}}}}}, "LookupCount": [13, 14]}}}, "glyf": {"glyphs": {"error": ["There are 238 changes, check manually!", ""]}}};</script><div id="difftable"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-400" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+    
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
