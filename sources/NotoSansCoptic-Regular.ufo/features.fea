@@ -79,3 +79,7 @@ feature ccmp {
     lookup numberMarkContextualSubstitution;
 } ccmp;
 
+feature kern {
+    # Automatic Code Start
+    pos @UPPERCASE_COPTIC periodcentered' <0 190 0 0>;
+} kern;
