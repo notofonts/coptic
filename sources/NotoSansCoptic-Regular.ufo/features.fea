@@ -63,8 +63,6 @@ lookup lineMarksCapReverseContextualSubstitution {
 
 lookup numberMarkContextualSubstitution {
     lookupflag IgnoreMarks;
-    sub numbermark-ar' u102E5 by numbermark-ar.extrawide;
-    sub u102E5 numbermark-ar' by numbermark-ar.extrawide;
     sub numbermark-ar' @EPACT_NUMBERS @EPACT_NUMBERS @EPACT_NUMBERS @EPACT_NUMBERS by numbermark-ar.extrawide;
     sub numbermark-ar' @EPACT_NUMBERS @EPACT_NUMBERS @EPACT_NUMBERS by numbermark-ar.wide;
     sub numbermark-ar' @EPACT_NUMBERS @EPACT_NUMBERS by numbermark-ar.semiwide;
